@@ -1,0 +1,57 @@
+.meals{
+     width: 90%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     font-size: 0.8rem;
+     margin: auto;
+}
+
+.img{
+     margin: 0.8rem;
+    border-radius: 0.5rem;
+    
+}
+.content{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin:0 15px;
+     padding-bottom: 5px;
+}
+
+img{
+    width: 20vw;
+}
+
+@media (max-width:850px) {
+     img{
+          width: 35vw;
+     }
+     .content{
+          display: grid;
+          margin:0 15px;
+          padding: 0 0 10px 0;
+     }
+     .content button{
+          width: 6rem;
+          text-align: center;
+     }
+}
+@media (max-width:550px) {
+     img{
+          width: 90%;
+     }
+     .content{
+          display: grid;
+          margin:0 15px;
+          padding: 0 0 10px 0;
+          font-size: 2rem;
+     }
+     .content button{
+          width: 6rem;
+          text-align: center;
+          font-size: 1.5rem;
+     }
+}
