@@ -5,7 +5,7 @@ import {NavLink} from 'react-router-dom'
 const MealCard = ({detail}) => {
   return (
     <div className='meals'>
-     {!detail ? "Sorry data not found" : detail.map((item) =>{
+     {!detail ? "Sorry data not found" : detail.map((item,index) =>{
           return(
                <div className="image">
                     <img src={item.strMealThumb} className='img' alt="" />

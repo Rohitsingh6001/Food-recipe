@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import MealCard from '../../../../Food_recipe/src/Component/MealCard'
+import MealCard from './MealCard.jsx'
 
 const MainPage = () => {
 const [data , setData] = useState();

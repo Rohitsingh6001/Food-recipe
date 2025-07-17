@@ -1,9 +1,7 @@
 import {Route , Router, Routes} from 'react-router-dom'
-import MainPage from '../../../Food_recipe/src/Component/MainPage'
-import Mealinfo from '../../../Food_recipe/src/Component/Mealinfo'
+import MainPage from './components/MainPage.jsx'
+import Mealinfo from './components/Mealinfo.jsx'
 function App() {
-
-
   return (
     <>
       <Routes>

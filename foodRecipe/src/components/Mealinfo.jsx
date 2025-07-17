@@ -10,7 +10,7 @@ const Mealinfo = () => {
       `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealid}`
     );
     const jsonData = await get.json();
-    setInfo(jsonData.Meals[0]);
+    setInfo(jsonData.meals[0]);
   };
 
   if (info != "") {
@@ -23,7 +23,7 @@ const Mealinfo = () => {
       ) : 
         <div className="mealInfo">
           <br />
-          <img src={info.strMealThumb} alt="" />
+          <img src={info.strMealThumb} />
           <div className="info">
             <h1>Recipe detail</h1>
             <p>{info.strMeal}</p>
